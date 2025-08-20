@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { HelpCircle, Search, Book, MessageCircle, Mail } from 'lucide-react';
-import Input from '../components/ui/Input';
+import { Book, Mail, MessageCircle, Search } from 'lucide-react';
+import { useState } from 'react';
 import Button from '../components/ui/Button';
+import Input from '../components/ui/Input';
 
 const Help = () => {
   const [searchTerm, setSearchTerm] = useState('');

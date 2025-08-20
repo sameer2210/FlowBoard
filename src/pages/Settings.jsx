@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Settings as SettingsIcon, User, Bell, Shield, Globe } from 'lucide-react';
-import { useAuth } from '../hooks/useAuth';
+import { Bell, Globe, Shield, User } from 'lucide-react';
+import { useState } from 'react';
 import Button from '../components/ui/Button';
 import Input from '../components/ui/Input';
+import { useAuth } from '../hooks/useAuth';
 
 const Settings = () => {
   const { user } = useAuth();
@@ -46,7 +46,7 @@ const Settings = () => {
           />
         </div>
       </div>
-      
+
       <div className="pt-4 border-t border-gray-200">
         <Button variant="primary">Update Profile</Button>
       </div>
@@ -76,7 +76,7 @@ const Settings = () => {
           </label>
         </div>
       </div>
-      
+
       <div className="pt-4 border-t border-gray-200">
         <Button variant="primary">Save Preferences</Button>
       </div>
@@ -102,13 +102,13 @@ const Settings = () => {
           </div>
         </div>
       </div>
-      
+
       <div>
         <h4 className="text-md font-medium text-gray-900 mb-2">Two-Factor Authentication</h4>
         <p className="text-sm text-gray-600 mb-4">Add an extra layer of security to your account</p>
         <Button variant="outline">Enable 2FA</Button>
       </div>
-      
+
       <div className="pt-4 border-t border-gray-200">
         <Button variant="primary">Update Password</Button>
       </div>
@@ -146,7 +146,7 @@ const Settings = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="pt-4 border-t border-gray-200">
         <Button variant="primary">Save Preferences</Button>
       </div>
