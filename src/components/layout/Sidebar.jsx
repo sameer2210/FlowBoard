@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { 
-  Home, 
-  FolderOpen, 
-  Users, 
-  Calendar, 
-  BarChart3, 
-  Settings, 
+import {
+  Home,
+  FolderOpen,
+  Users,
+  Calendar,
+  BarChart3,
+  Settings,
   HelpCircle,
   Briefcase
 } from 'lucide-react';
@@ -32,20 +32,19 @@ const Sidebar = ({ isOpen, onClose }) => {
     <>
       {/* Mobile backdrop */}
       {isOpen && (
-        <div 
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
-          onClick={onClose}
-        />
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden" onClick={onClose} />
       )}
 
       {/* Sidebar */}
-      <div className={`
+      <div
+        className={`
         fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0
         ${isOpen ? 'translate-x-0' : '-translate-x-full'}
-      `}>
+      `}
+      >
         <div className="flex items-center justify-center h-16 bg-blue-600 text-white">
           <Briefcase size={24} className="mr-2" />
-          <span className="text-lg font-bold">ProjectHub</span>
+          <span className="text-lg font-bold">FlowBoard</span>
         </div>
 
         <nav className="mt-8">
@@ -55,7 +54,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             </p>
           </div>
 
-          {menuItems.map((item) => (
+          {menuItems.map(item => (
             <Link
               key={item.path}
               to={item.path}
@@ -93,9 +92,7 @@ const Sidebar = ({ isOpen, onClose }) => {
         <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-200">
           <div className="bg-blue-50 rounded-lg p-3">
             <p className="text-sm font-medium text-blue-800">Need Help?</p>
-            <p className="text-xs text-blue-600 mt-1">
-              Contact our support team for assistance.
-            </p>
+            <p className="text-xs text-blue-600 mt-1">Contact our support team for assistance.</p>
             <button className="mt-2 text-xs text-blue-600 hover:text-blue-800 font-medium">
               Get Support
             </button>
