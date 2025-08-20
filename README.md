@@ -1,162 +1,115 @@
-# Project Management Dashboard
+FlowBoard – Project Management Dashboard
 
-A modern, responsive React-based project management dashboard with authentication, project tracking, and team collaboration features.
+A modern, responsive React-based project management dashboard with authentication, project tracking, and team collaboration features. Built using React 19, TailwindCSS 4, React Router 6, and Context API, FlowBoard helps teams stay productive and organized.
 
-## Features
+Live Demo: [FlowBoard App](https://magical-kringle-fc0d05.netlify.app/)
 
-- **Authentication System**: Login/logout with session management
-- **Responsive Design**: Works on desktop, tablet, and mobile devices
-- **Project Management**: Create, view, and track projects
-- **Task Management**: Organize tasks within projects
-- **Team Collaboration**: Manage team members and roles
-- **Real-time Dashboard**: View project statistics and progress
-- **Search & Filter**: Find projects quickly with advanced filtering
-- **Modern UI**: Clean, intuitive interface with Tailwind CSS
+LinkedIn: linkedin.com/in/sameer-khan2210
 
-## Tech Stack
+Author Portfolio: https://portfolio-coral-two-16.vercel.app/
 
-- **Frontend**: React 18 with Hooks
-- **Routing**: React Router DOM
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **State Management**: React Context API
-- **Authentication**: Mock authentication with localStorage
+Features
+Authentication System: Login/logout with session persistence
+Responsive Design: Optimized for desktop, tablet, and mobile
+Project Management: Create, view, and track projects
+Task Management: Organize and track tasks within projects
+Team Collaboration: Manage team members and roles
+Real-time Dashboard: Track progress, deadlines, and stats
+Search & Filter: Quickly find projects
+Modern UI: TailwindCSS-powered clean design
 
-## Getting Started
+🛠️ Tech Stack
 
-### Prerequisites
+Frontend: React 19 (with Hooks)
+Routing: React Router DOM v6
+Styling: Tailwind CSS v4
+Icons: Lucide React
+State Management: React Context API
+Authentication: Mock auth with localStorage
 
-- Node.js (version 14 or higher)
-- npm or yarn
+⚡ Getting Started
+Prerequisites
 
-### Installation
+Node.js >=18
+npm or yarn
 
-1. Clone the repository or create a new React app:
-```bash
-npx create-react-app project-management-dashboard
-cd project-management-dashboard
-```
+Installation
 
-2. Install dependencies:
-```bash
-npm install lucide-react react-router-dom
-```
+# Clone repo
 
-3. Replace the default files with the provided code files following the folder structure.
+git clone https://github.com/sameer2210/flowboard.git
+cd flowboard
 
-4. Start the development server:
-```bash
-npm start
-```
+# Install dependencies
 
-5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm install
 
-## Demo Credentials
+# Start dev server
+
+npm run dev
+
+Now open 👉 http://localhost:5173
+
+🔑 Demo Credentials
 
 Use these credentials to log in:
-- **Email**: admin@demo.com
-- **Password**: password
+Email: admin@demo.com
+Password: password
 
-## Project Structure
-
-```
+📂 Project Structure
 src/
 ├── components/
-│   ├── auth/
-│   │   └── LoginForm.jsx
-│   ├── layout/
-│   │   ├── Header.jsx
-│   │   ├── Sidebar.jsx
-│   │   └── Layout.jsx
-│   ├── projects/
-│   │   ├── ProjectCard.jsx
-│   │   ├── ProjectList.jsx
-│   │   ├── ProjectDetails.jsx
-│   │   └── ProjectModal.jsx
-│   └── ui/
-│       ├── Button.jsx
-│       ├── Input.jsx
-│       ├── Modal.jsx
-│       └── Pagination.jsx
-├── contexts/
-│   └── AuthContext.jsx
-├── data/
-│   └── mockData.js
-├── hooks/
-│   └── useAuth.js
-├── pages/
-│   ├── Login.jsx
-│   ├── Dashboard.jsx
-│   ├── Projects.jsx
-│   └── ProjectDetail.jsx
-├── utils/
-│   └── helpers.js
+│ ├── auth/ # Authentication (Login form)
+│ ├── layout/ # Header, Sidebar, Main Layout
+│ ├── projects/ # ProjectCard, ProjectList, ProjectDetails
+│ └── ui/ # Button, Input, Modal, Pagination
+├── contexts/ # AuthContext (state management)
+├── data/ # mockData.js (sample data)
+├── hooks/ # Custom hooks (useAuth, etc.)
+├── pages/ # Login, Dashboard, Projects, ProjectDetail
+├── utils/ # Helper functions
 ├── App.jsx
-|---AuthenticatedApp.jsx
-├── index.js
+├── AuthenticatedApp.jsx
+├── main.jsx
 └── index.css
-|---main.jsx
-```
 
-## Key Features
+📊 Key Features Breakdown
 
-### Authentication
-- Mock authentication system with form validation
-- Session persistence using localStorage
-- Protected routes that redirect to login if not authenticated
-- Auto-logout on session expiry
+🔐 Authentication
+Session persistence via localStorage
+Protected routes + auto-logout
 
-### Dashboard
-- Project statistics and overview
-- Recent projects display
-- Upcoming deadlines tracking
-- Progress visualization
+📈 Dashboard
 
-### Project Management
-- Project listing with search and filtering
-- Detailed project views with tabbed interface
-- Task management within projects
-- Team member management
-- Project status tracking
+Statistics & project overview
+Recent projects & upcoming deadlines
 
-### Responsive Design
-- Mobile-first approach
-- Collapsible sidebar navigation
-- Responsive grid layouts
-- Touch-friendly interface
+📂 Projects
 
-## Available Scripts
+Search & filter functionality
+Detailed project view with tasks & members
 
-- `npm start`: Runs the app in development mode
-- `npm test`: Launches the test runner
-- `npm run build`: Builds the app for production
-- `npm run eject`: Ejects from Create React App (one-way operation)
+📱 Responsive
 
-## Customization
+Mobile-first design
+Collapsible sidebar + grid layouts
 
-### Adding New Projects
-Edit `src/data/mockData.js` to add or modify project data.
+📜 Available Scripts
 
-### Styling
-The project uses Tailwind CSS. Modify the utility classes in components to customize the appearance.
+npm run dev → Start Vite dev server
+npm run build → Build for production
+npm run preview → Preview production build
+npm run lint → Run ESLint checks
 
-### Adding New Features
-- Add new routes in `src/App.jsx`
-- Create new pages in `src/pages/`
-- Add new components in `src/components/`
+🎨 Customization
 
-## Contributing
+Projects: Edit src/data/mockData.js
+Styling: TailwindCSS utility classes
+Features: Add new routes in App.jsx or components in src/components/
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+👨‍💻 Author
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## Support
-
-For support, please open an issue on the repository or contact the development team.
+Sameer Khan – MERN Full-Stack Developer
+📂 GitHub: github.com/sameer2210
+📧 Email: sameerkhan27560@gmail.com
+💼 LinkedIn: linkedin.com/in/sameer-khan2210
